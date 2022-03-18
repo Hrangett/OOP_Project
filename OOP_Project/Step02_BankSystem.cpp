@@ -25,7 +25,12 @@ public:
 		name = new char[len];
 		strcpy(name,Name);
 	}
-
+	acc_INFO(const acc_INFO &copy) :id(copy.id), money(copy.money)
+	{
+		int len = strlen(copy.name) + 1;
+		name = new char[len];
+		strcpy(name, copy.name);
+	}
 	~acc_INFO()
 	{
 		delete[]name;
