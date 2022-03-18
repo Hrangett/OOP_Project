@@ -15,7 +15,11 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
+#include <cstdio>
 #include <cstring>
+#include <cstdlib>
+#include <Windows.h>
+
 using namespace std;
 
 typedef struct _acc_info {
@@ -201,14 +205,15 @@ void ShowAllAccInfo()
 	cout << "계좌정보.." << endl;
 	while (true)
 	{
+		printf("%d\n", i);
 		cout << "[ 계 좌 ID ] " << acc_arr[i].id << endl;
 
 		cout << "[ 이   름 ] " << acc_arr[i].name << endl;
 
-		cout << "[ 잔   액 ]" << acc_arr[i].money;
-		if (i == acc_num)
+		cout << "[ 잔   액 ]" << acc_arr[i].money << endl;
+		if (i == acc_num - 1)
 		{
-			cout << "출력을 종료,,";
+			cout << "출력을 종료,," << endl;
 			break;
 		}
 		i++;
