@@ -191,7 +191,7 @@ void WithdrawMony()
 			break;
 		else
 		{
-			cout << "또속냐" << endl;
+			cout << "출금에 실패" << endl;
 		}
 	}
 	
