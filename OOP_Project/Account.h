@@ -11,6 +11,7 @@ private:
 public:
 	Account(int ID, int money, const char* name);
 	Account(const Account& ref);//오버로딩
+	Account& operator=(const Account& ref);
 
 	int GetAccID() const;
 	virtual void Deposit(int money);

@@ -29,12 +29,12 @@ void AccountHandler::MakeAccount(void)
 	else 
 		MakeCreditAccount();
 
-	Sleep(1000);
+
 }
 
 void AccountHandler::MakeNormalAccount()
 {
-	Sleep(2000);
+	
 	int id;
 	char name[NAME_LEN];
 	int balance;
@@ -49,7 +49,7 @@ void AccountHandler::MakeNormalAccount()
 
 	cout << "입금액 :";
 	cin >> balance;
-
+	
 	cout << "이자율 :";
 	cin >> interRate;
 	cout << endl;
